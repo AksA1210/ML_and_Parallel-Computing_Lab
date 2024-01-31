@@ -1,0 +1,7 @@
+Enter the size of the array: 100
+Sum of elements: 5184
+Time taken for sum calculation: 0.000002 seconds
+
+Enter the key element to search: 15
+Key element found at index: 3
+Time taken for search operation: 0.000003 seconds
