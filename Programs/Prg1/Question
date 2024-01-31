@@ -1,0 +1,16 @@
+
+Q1: Write a C/C++ program to create a thread to print first n natural numbers.
+Q2: Write a program in C/C++ to create a random integer array of size n and evaluate the performance in terms of execution time.
+
+    1. Sequential program with functions
+        i.  Find the sum of elements in an array
+        ii. Search a key element in an array
+    2. A thread based program to partition the array and perform computation in each thread.
+        i.  Find the sum of elements in an array
+        ii. Search a key element in an array
+
+
+
+Plot N - 100,500,1000,2000,5000,10000  - execution time - variation
+Thread - 1,2,3,...10 (multiple)
+ 
