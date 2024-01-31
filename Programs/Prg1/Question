@@ -1,4 +1,4 @@
-
+gcc -g -Wall -pthread yourcode.c -lpthread -o yourprogram
 Q1: Write a C/C++ program to create a thread to print first n natural numbers.
 Q2: Write a program in C/C++ to create a random integer array of size n and evaluate the performance in terms of execution time.
 
