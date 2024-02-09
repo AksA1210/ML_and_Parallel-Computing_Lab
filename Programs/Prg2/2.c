@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-// Function to generate a random integer array of size n
+
 int *generateRandomArray(int n) {
     int *arr = (int *)malloc(n * sizeof(int));
     if (arr == NULL) {
@@ -10,12 +10,12 @@ int *generateRandomArray(int n) {
         exit(1);
     }
     for (int i = 0; i < n; ++i) {
-        arr[i] = rand() % 100; // Generate random numbers between 0 and 99
+        arr[i] = rand() % 100; 
     }
     return arr;
 }
 
-// Function to find the sum of elements in an array
+
 int sumOfElements(int *arr, int n) {
     int sum = 0;
     for (int i = 0; i < n; ++i) {
@@ -24,14 +24,14 @@ int sumOfElements(int *arr, int n) {
     return sum;
 }
 
-// Function to search a key element in an array
+
 int searchKey(int *arr, int n, int key) {
     for (int i = 0; i < n; ++i) {
         if (arr[i] == key) {
-            return i; // Return index of key if found
+            return i; 
         }
     }
-    return -1; // Return -1 if key not found
+    return -1; 
 }
 
 int main() {
@@ -39,7 +39,6 @@ int main() {
     printf("Enter the size of the array: ");
     scanf("%d", &n);
 
-    // Generate random array
     int *arr = generateRandomArray(n);
 
     // Calculate the sum of elements and measure the execution time
@@ -50,7 +49,7 @@ int main() {
     printf("Sum of elements: %d\n", sum);
     printf("Time taken for sum calculation: %lf seconds\n", time_taken_sum);
 
-    // Search a key element and measure the execution time
+    // Search
     int key;
     printf("\nEnter the key element to search: ");
     scanf("%d", &key);
@@ -65,7 +64,6 @@ int main() {
     }
     printf("Time taken for search operation: %lf seconds\n", time_taken_search);
 
-    // Free dynamically allocated memory
     free(arr);
 
     return 0;
