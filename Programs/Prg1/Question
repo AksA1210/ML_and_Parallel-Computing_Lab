@@ -13,4 +13,30 @@ Q2: Write a program in C/C++ to create a random integer array of size n and eval
 
 Plot N - 100,500,1000,2000,5000,10000  - execution time - variation
 Thread - 1,2,3,...10 (multiple)
- 
+
+
+
+import os
+import pytest
+import sys
+sys.path.append("C:/Users/cusat/task_5.py")
+from task_5 import Downloader, download_images
+
+def test_Downloader():
+    # Initialize Downloader
+    parquet_file = "C:/Users/cusat/Desktop/links.parquet"
+    downloader = Downloader(parquet_file)
+    assert len(downloader.urls) > 0
+
+def test_download_images():
+    # Test parameters
+    parquet_file = "C:/Users/cusat/Desktop/links.parquet"
+    output_directory = "C:/Users/cusat/test_output"
+    max_images = 20 
+    download_images(parquet_file, output_directory, max_images)
+    assert os.path.isdir(output_directory)
+    assert len(os.listdir(output_directory)) == max_images
+
+
+if __name__ == "__main__":
+    pytest.main([__file__])
