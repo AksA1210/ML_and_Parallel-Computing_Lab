@@ -12,9 +12,16 @@ Q2: Write a program in C/C++ to create a random integer array of size n and eval
 
 
 Plot N - 100,500,1000,2000,5000,10000  - execution time - variation
-Thread - 1,2,3,...10 (multiple)
+Thread - 1,2,3,4,5 (multiple)
 
+Output should come as : 
 
+Thread  1   2   3   4   5
+Count 
+100
+1000
+5000
+10000
 
 import os
 import pytest
