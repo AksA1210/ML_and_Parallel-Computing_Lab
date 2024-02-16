@@ -79,17 +79,14 @@ double measureExecutionTime(struct timespec start, struct timespec end) {
 }
 
 
-void print_table(int rows,double execution_times[][MAX_THREADS]) {
-    // Header
+void print_table(int rows, double execution_times[][MAX_THREADS]) {
+    int N_values[] = {100, 1000, 5000, 10000};
     printf("%-15s%-10s%-10s%-10s%-10s%-10s\n", "Count\\Threads", "1", "2", "3", "4", "5");
-    // Separator
     printf("------------------------------------------------------------------\n");
-
-    // Data
-    for (int i = 0; i < rows ; i++) {
-        printf("%-15d", 100 * (i + 1));
+    for (int i = 0; i < rows; i++) {
+        printf("%-15d", N_values[i]);
         for (int j = 0; j < MAX_THREADS; j++) {
-            printf("%-10.6lf", execution_times[i][j]); 
+            printf("%-10.6lf", execution_times[i][j]);
         }
         printf("\n");
     }
