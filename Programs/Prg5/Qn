@@ -1,0 +1,3 @@
+From sklearn, choose all classifiers and compute evaluation metrics of the iris dataset.
+After computation,choose the best 4 classifiers which gave the best performance.
+On these do ensemble methods such as bagging,boosting and stacking
