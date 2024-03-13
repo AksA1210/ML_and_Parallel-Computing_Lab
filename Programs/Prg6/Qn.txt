@@ -1,0 +1,17 @@
+Data preprocessing (medium)
+
+Load the MNIST handwritten digit dataset and perform the following pre-processing steps : 
+
+* Normalise the pixel values of the images
+* Apply one-hot encoding to the target labels.
+* Split the data into training, validation and test sets.
+
+Dataset : https://github.com/iamavieira/handwritten-digits-mnist
+
+Classification(hard)
+
+Build a logistic regression model to classify handwritten digits from the MNIST dataset.
+
+* Evaluate the model performance using accuracy,precision,recall and F1 score.
+* Fine-tune the model hypeerparameters using grid search CV to improve performance.
+* Visualize the decision boundary of the model
