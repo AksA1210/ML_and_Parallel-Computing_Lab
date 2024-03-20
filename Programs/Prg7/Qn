@@ -1,0 +1,5 @@
+Perform feature extraction ON IRIS DATASET using LDA,PCA,TSME and SVD.
+Reduce it to : 
+i. 2 features
+ii. 3 features
+and apply cross validationn in each case and report your inference,
